@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function recrue(){
+                var take = document.getElementById("me");
+                var take1 = document.getElementById("me1");
+                var take2 = document.getElementById("me2");
+                var take3 = document.getElementById("me3");
+                var take4 = document.getElementById("me4");
+                var take5 = document.getElementById("me5");
+        
+                if(document.getElementById('me').checked ,document.getElementById('me2').checked,document.getElementById('me4').checked) {
+                    document.getElementById("myButton").onclick = function recrue() {
+                var url = "PORN-HUB.HTML";
+            window.location(url);
+            };
+            
+        }
+        else if(document.getElementById('me1').checked) {
+          //Female radio button is checked
+        }
+        
+        
+        
+            }
+        </script>
+        
+<style>
+    form{
+        background-color: rgb(97, 95, 95);
+        color:white;
+        width: 300px;
+        height: 250px;
+        margin-left: 200px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    button{
+        margin-top: 10px;
+        width: 70px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+    
+    }
+    button::after{
+        background-color: green;
+        box-shadow: 1px 1px 5px black;
+    }
+    p{
+        padding-top: 5px;
+    
+    }
+    </style>
+    </head>
+    <body>
+        
+<center>
+    <div>
+<form>
+    <p>Quel lieu pour votre masison?</p>
+        <label for="me">Douala</label>
+        <input type="radio" id="me" name="radio1">
+        <label for="me1">Yaounde</label>
+        <input type="radio" id="me1" name="radio1">
+
+    <p>Nombres de chambres?</p>
+        <label for="me2">1</label>
+        <input type="radio" id="me2" name="radio2">
+        <label for="me3">2</label>
+        <input type="radio" id="me3" name="radio2">
+
+    <p>Villa ou duplex?</p>
+    <label for="me4">villa</label>
+  <input type="radio" id="me4" name="radio3">
+    <label for="me5">duplex</label>
+  <input type="radio" id="me5" name="radio3">
+    <br>
+  <button onclick="recrue()" id="myButton">submit</button>
+
+</form> 
+ </div>   
+</center>
+    </body>
+</html>

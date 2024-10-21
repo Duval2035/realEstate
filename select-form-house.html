@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            
+<style>
+    body{
+        background-image: url('hand.jpg');
+    }
+    form{
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        background-color: rgb(97, 95, 95);
+        color:white;
+        width: 400px;
+        height: 450PX;
+        /*margin-left: 200px;*/
+        text-align: center;
+        border-radius: 10px;
+    }
+    button{
+        margin-top: 10px;
+        width: 70px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+    
+    }
+    button::after{
+        background-color: green;
+        box-shadow: 1px 1px 5px black;
+    }
+    p{
+        padding-top: 5px; 
+    
+    }
+    </style>
+        
+<center><div>
+        <form>
+    <p>location</p>
+        <label for="me">Douala</label>
+        <input type="radio" id="douala" name="radio1">
+        <label for="me1">Yaounde</label>
+        <input type="radio" id="Yaounde" name="radio1">
+
+    <p>type</p>
+        <label for="me2">duplex</label>
+        <input type="radio" id="f" name="radio2">
+        <label for="me3">simplex</label>
+        <input type="radio" id="stock" name="radio2">
+        <label for="me3">villa</label>
+        <input type="radio" id="other" name="radio2">
+
+    <p>meuble</p>
+    <label for="me4">meubler</label>
+  <input type="radio" id="mach" name="radio3">
+    <label for="me5">non meubler</label>
+  <input type="radio" id="nomach" name="radio3">
+    <br>
+ <!--now we are going to check if the box is selcted using js-->
+ <button type="button" onclick="checkButton()">submit</button>
+
+<script>
+   function checkButton(){ 
+    //a1 and b1 case
+       if(document.getElementById('douala').checked){
+        if(document.getElementById('f').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+
+      if (document.getElementById('douala').checked){
+        if(document.getElementById('f').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "TSAKENG.HTML"
+       }}}
+       
+       //a1 and b2 case
+        if (document.getElementById('douala').checked){
+        if(document.getElementById('stock').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+
+        if (document.getElementById('douala').checked){
+        if(document.getElementById('stock').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "success.html"
+       }}}
+       //a1 and b3 case
+        if (document.getElementById('douala').checked){
+        if(document.getElementById('other').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+       if (document.getElementById('douala').checked){
+        if(document.getElementById('other').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "success.html"
+       }}}
+       //a2 and b1 case
+       if(document.getElementById('yaounde').checked){
+        if(document.getElementById('f').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+
+       if (document.getElementById('yaounde').checked){
+        if(document.getElementById('f').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "success.html"
+       }}}
+       
+       //a2 and b2 case
+       if (document.getElementById('yaounde').checked){
+        if(document.getElementById('stock').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+
+         if (document.getElementById('yaounde').checked){
+        if(document.getElementById('stock').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "success.html"
+       }}}
+       //a2 and b3 case
+      if (document.getElementById('yaounde').checked){
+        if(document.getElementById('other').checked){
+            if(document.getElementById('mach').checked){
+        window.location= "success.html"
+       }}}
+       if (document.getElementById('yaounde').checked){
+        if(document.getElementById('other').checked){
+            if(document.getElementById('nomach').checked){
+        window.location= "success.html"
+       }}}
+       
+   }
+   alert('SORT OUT YOUR ESTATE SERVICE BELOW')
+ </script>
+
+</form> 
+ </div>   
+</center>
+    </body>
+</head>
+<body>
+<p></p>    
+     
+</body>
+</html>

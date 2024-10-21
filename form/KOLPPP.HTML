@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            
+<style>
+    form{
+        background-color: rgb(97, 95, 95);
+        color:white;
+        width: 300px;
+        height: 250px;
+        margin-left: 200px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    button{
+        margin-top: 10px;
+        width: 70px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+    
+    }
+    button::after{
+        background-color: green;
+        box-shadow: 1px 1px 5px black;
+    }
+    p{
+        padding-top: 5px; 
+    
+    }
+    </style>
+        
+<center><div>
+        <form>
+    <p>Quel lieu pour votre masison?</p>
+        <label for="me">Douala</label>
+        <input type="radio" id="me" name="radio1">
+        <label for="me1">Yaounde</label>
+        <input type="radio" id="me1" name="radio1">
+
+    <p>Nombres de chambres?</p>
+        <label for="me2">1</label>
+        <input type="radio" id="me2" name="radio2">
+        <label for="me3">2</label>
+        <input type="radio" id="me3" name="radio2">
+
+    <p>Villa ou duplex?</p>
+    <label for="me4">villa</label>
+  <input type="radio" id="me4" name="radio3">
+    <label for="me5">duplex</label>
+  <input type="radio" id="me5" name="radio3">
+    <br>
+  <button onclick="recrue()" id="myButton">submit</button>
+
+</form> 
+ </div>   
+</center>
+    </body>d
+</head>
+<body>
+<p>choose one of them</p>    
+      summer<input type="radio" name="JPT" id="summer"value="summer"><br>
+      winter<input type="radio" name="JPT" id="winter"value="winter"><br>
+      rainy<input type="radio" name="JPT" id="rainy"value="rainy"><br>
+      autumn<input type="radio" name="JPT" id="autumn"value="autumn"><br>
+      <!--now we are going to check if the box is selcted using js-->
+      <button type="button" onclick="checkButton()">submit</button>
+
+          <h3 id="disp" style="color: green;"></h3>
+          
+          <h4 id="error" style="color: red;"></h4>
+    
+    <script>
+        function checkButton(){
+            if(document.getElementById('summer').checked){
+                document.getElementById("disp").innerHTML
+            =document.getElementById("summer").value + "radio button is checked";
+            }
+
+           else if(document.getElementById('winter').checked){
+                document.getElementById("disp").innerHTML
+            =document.getElementById("winter").value + "radio button is checked";
+            }
+
+            else if(document.getElementById('rainy').checked){
+                document.getElementById("disp").innerHTML
+            =document.getElementById("rainy").value + "radio button is checked";
+            }
+
+            else if(document.getElementById('autumn').checked){
+                document.getElementById("disp").innerHTML
+            =document.getElementById("autumn").value + "radio button is checked";
+            }
+            else{
+                document.getElementById("error").innerHTML = "you have not selected any season"
+            }
+            
+        }
+      </script>
+</body>
+</html>

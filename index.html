@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="responsive.css">
+  <title>KODISALIE</title>
+  <style>
+    li{
+      color: white;
+    }
+/*header section*/
+.hero_area {
+  background-image: url('hero-bg.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 60% 100%;
+}
+.lg_toggl-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 56px;
+  height: 40px;
+  cursor: pointer;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(53, 84, 209, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 60px;
+}
+
+.overlay a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f1f1f1;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.overlay a:hover {
+  color: #252525;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu_width {
+  width: 100%;
+}
+
+/*end header section*/
+/* slider section */
+.slider_section {
+  padding: 75px 0;
+  color: #0b0b0b;
+}
+
+.slider_section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.slider_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_section .detail-box h1 {
+  color: #3554d1;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.slider_section .detail-box h1 span {
+  color: #0f2480;
+}
+
+.slider_section .detail-box p {
+  margin-top: 25px;
+}
+
+.slider_section .detail-box .btn-box {
+  margin-top: 45px;
+}
+/*color of sliding colaps menu*/
+.slider_section .detail-box .btn-box a {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: transparent;
+  color: #3554d1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #3554d1;
+  border-radius: 25px;
+  margin-bottom: 75px;
+}
+
+
+
+.custom_menu-btn {
+  z-index: 9;
+  position: absolute;
+  right: 15px;
+  top: 7px;
+}
+
+.custom_menu-btn button {
+  margin-top: 0px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+/*colpas button spacing design */
+.custom_menu-btn button span {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*colaps button possition*/
+.menu_btn-style {
+  position: fixed;
+  right: 40px;
+  top: 7px;
+}
+
+.custom_menu-btn .s-2 {
+  width: 25px;
+  margin-left: auto;
+}
+
+.custom_menu-btn .s-3 {
+  width: 25px;
+  margin-left: auto;
+}
+
+  </style>
+</head>
+<body>
+  <!--heading-->
+  <section style=" padding: 0%;margin: 0%;">
+    <div class="hero_area">
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container"> <br>         
+              <H1 style="font-size: 100px; display: flex;flex-wrap: wrap;color: #355cf8;">KODISALIE</H1>
+              <br>
+              <div style="padding-left: 28px;padding-bottom: 70px;"><b><h7 ><span style="font-size: 38px;text-transform: uppercase;color: #0c2caa;"> A STEP BETWEEN YOU</span><br>
+                <span style="font-size: 38px;text-transform: uppercase;color: #091752;padding-left: 185px;">AND</span><br>
+                <span style="font-size: 38px;text-transform: uppercase;color: #0c2caa;padding-left: 80px;">YOUR SHELTER</span></h7></b>
+              </div> 
+            <div class="navbar-collapse">
+                <div class="custom_menu-btn">
+                  <button style="border-radius: 40px; ;background-color:#fff;height: 50px;width: 150px;">
+                    <a style="text-decoration: none;" href="login1.html"> REGISTRATION</a></button>
+                  
+                <button onclick="openNav()">
+                  <span class="s-1">
+  
+                  </span>
+                  <span class="s-2">
+  
+                  </span>
+                  <span class="s-3">
+  
+                  </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                  <a href="1st web site.html">ABOUT</a>
+                  <a href="house.html">HOUSE</a>
+                  <a href="price.html">PRICING</a>
+                  <a href="contact.html">CONTACT US</a>
+                  <a href="Contact Us.html">MEET THE TEAM</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <br><br><br><br><br><br>
+        </header>
+  </section>
+
+<!--about -->
+  <section>
+   
+    <img style="padding-left: 300px;" src="about-img.jpg" alt="">
+    <div style="padding-left: 280px;padding-top: 40px;" > <h1>About Our Apartment</h1> 
+    <h3 style="font-family:sans-serif;font-weight: 20;">There are many variations of passages of Lorem Ipsum available,
+       but the  <br> majority have suffered alteration in some form, by injected humour,
+        or <br> randomised words</h3>
+   <button style="border-radius: 40px;;border: 2px solid rgb(36, 203, 233)  ;background-color:white;height: 50px;width: 150px;"><a style="text-decoration: none;" href="#"> READ More</a></button>
+      </div>
+      <img src="build.gif" alt="">
+  </section>
+
+  <section>
+
+  </section>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR></BR></BR></BR></BR></BR></BR></BR></BR><BR><BR><BR><BR><BR><BR></BR></BR></BR></BR></BR></BR></Ri:a>
+</Ri:a></B></B></BR></BR></BR></BR>
+<!--footer-->
+<section style="background-color:#0f2480;;display: flex;flex-direction: column;flex-wrap: wrap;flex-shrink: initial;">
+    <div style="padding-top: 30px;padding-left: 40px;">
+    <input style="border-radius: 10px;border: 0ch transparent;height: 40px;width: 50%;display: flex;flex-direction: row;flex-wrap: wrap;flex-shrink: initial;" type="text" placeholder="Name"><br><br><br>
+    <input style="border-radius: 10px;border: 0ch transparent;height: 40px;width: 50%;display: flex;flex-direction: row;flex-wrap: wrap;flex-shrink: initial;" type="email" placeholder="Email"><br><br><br>
+    <input style="border-radius: 10px;border: 0ch transparent;height: 40px;width: 50%;display: flex;flex-direction: row;flex-wrap: wrap;flex-shrink: initial;" type="text" placeholder="Phone Number"><br><br><br>
+    <input style="border-radius: 10px;border: 0ch transparent;height: 70px;width: 50%;display: flex;flex-direction: row;flex-wrap: wrap;flex-shrink: initial;" type="text " placeholder="Message"><br><br>
+    <button style="border-radius: 40px; ;background-color:orange;height: 50px;width: 150px;"><a style="text-decoration: none;" href="#"> SEND</a></button>
+      </div> 
+      <br><br><br>
+      <div style="display: inline-block;flex-direction: column;justify-content: space-evenly;">
+    <div style="float: left; padding-left: 80px;">
+     <h1 style="color: #fff;">About Apartment</h1>
+     <ul type="none">
+      <li><img src=""> Address</li><br>
+      <li><img src=""> +237695114736</li><br>
+      <li><img src="">konissiricky@gmail.com</li><br>
+     </ul>
+    </div>
+    <div style="float: left;padding-left: 110px;">
+      <h1 style="color: #fff;">Information</h1>
+      <ul type="none">
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+      </ul>
+    </div>
+    <div style="float: left;padding-left: 120px;">
+      <h1 style="color: #fff;">Useful Link</h1>
+      <ul type="none">
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+        <li>okokok</li>
+
+      </ul>
+    </div>
+    <div style="float: left;padding-left: 100px;">
+      <h1 style="color: #fff;">reste a jour</h1>
+      <input type="email" style="width:300px; height: 50px; ;" placeholder="Enter your email" required="konissi@gmail.com"><br>
+    <br>  <button style="color: white;background-color: rgb(230, 130, 16);height: 45px;width: 200px;">SUSCRIBE</button>
+<br><img src="fb.png" alt=""> <span style="color: transparent;">----</span><img src="twitter.png" alt=""> <span style="color: transparent;">----</span><img src="linkedin.png" alt=""><span style="color: transparent;">------</span><img src="youtube.png" alt="">
+    </div>
+</div>
+<hr style="width: 900px;">
+<p style="text-align:center;color: white;font-size: 20px;">LIFE IS ALL ABOUT CHIPS @KN-ZONE</p>
+  </section>
+
+
+</body>
+</html>
+<script >
+  
+  // nav menu 
+  function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+  }
+  
+    </script>

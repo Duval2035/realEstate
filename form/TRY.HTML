@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<br>
+<p>mcd dairam is carried out for each funtionality of the system.this imply that for a given system , we can not have only one diagram<br>
+</p>
+<p>concept of the mcd</p><br>
+<span>1- event: it is a solicitation of the system that imply a reaction from it.</span><br>
+<p>they are of two type: in this case the solicitation of the system is an action carried onthe system</p>
+<span>2-internal event: it is an action coming eigther     (date ,time,information on the client,material needed...)</span>
+<span>ex: the sel from a cashier</span><br>
+<span>request of credit transfer in out wallet</span><br>
+<span>dailing a code on a phone to click a validation button of a click </span><br>
+<span>representation of an event in an  entity daigram  is done on an elips</span>
+<h1>operation</h1><br><span>an operation is a set of action done after a certain number of related events</span><br>
+<p>operations indicate the functionality of the system. for each system functionality of the sys we can have one or more operationrelated to it. eg</p>
+<br>
+<span>patient registration</span><br>
+<span>balance checking etc...</span>
+<br>
+<p>in the MCD daigram , the representation of operation is made by a box</p>
+<span>3- result</span><br>
+<span>the result is an operation output send to the actor or to the system </span><br>
+<p>in case a result is send to the system, that result become a new event of the system </p><br>
+<p>result can be a document ,a messae, an information send,</p>
+<span>when result is send to an actor it is said to be an external event while if send to the system it is said to be an internal event<br></span>
+<span>the representation of an event is made by an elipse</span>
+<span>4-synchroisation</span><br>
+<span>definition</span><br><p>it is a boolean condition (true of false) that should be repected before the set of related that leads to a given operation</p><br><p>those condition are also known as managing roles</p>
+<p>we have the following conditions</p>
+<span>-incase of only one event, the synchronistion can be left empty</span>
+<span>-in case there is more than one event,they can be replaced by alphanumeric letter</span>
+<br>
+<span>if an event </span><br>
+<span>if all event  are ..... we can just put in the sybole of the operator in the synchronistion symbol</span>
+<br>
+<span>eg the</span>
+
+
+
+
+
+<span>5-process</span>
+    implementation of the system is done by a succession of tasks or process . thos process should be list out in the operation representation.
+    eg
+    calculate the total amout, record information in the data base, checking infromation from the data base, arithmetic operation (+,-,/,*)
+
+
+<span>6-emission rules</span>
+this are the diff conditions for result in an operation.each condition will lead to a specific result in case w have more than one result in an operation
+
+eg
+
+
+identify all the operation needed to complete that function 
+2= for each operation identify the following
+- list all the events that can lead to that operation
+- identify the synchronistion of those event
+- identify all the process and their result should be given as a mission rules
+- identify for each operation their corresponding result
+- for each of the entity element the apropriate     and represent it graphycaly
+remark: in case for a function we have more than operation .they must be an internal result that will need one operation to another.eg 
+
+
+
+
+
+
+
+
+</body>
+</html>
